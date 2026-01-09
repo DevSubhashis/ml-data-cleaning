@@ -16,7 +16,7 @@ A web application for identifying, exploring, and solving data cleaning problems
 ## ⭐ Features
 
 - 📊 Displays common data cleaning problem scenarios  
-- 🛠️ Interactive examples or problem descriptions (TODO: expand)  
+- 🛠️ Problem descriptions  
 - 📚 Resource links or guidance for data quality improvement  
 - 🔗 Easy navigation between problem categories  
 - Mobile-friendly responsive UI
