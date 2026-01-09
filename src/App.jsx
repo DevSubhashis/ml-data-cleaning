@@ -14,6 +14,8 @@ import ImpossibleValues from './component/ImpossibleValues';
 import RareCategories from './component/RareCategories'; 
 import SkewedNumericValues from './component/SkewedNumericValues'; 
 import CorruptedText from './component/CorruptedText'; 
+import DuplicateMeaningColumns from './component/DuplicateMeaningColumns';
+import TargetLeakage from './component/TargetLeakage';
 
 // ============= Main App Component =============
 
@@ -37,8 +39,8 @@ const App = () => {
     { id: 14, name: 'Rare categories', completed: false, component: RareCategories },
     { id: 15, name: 'Skewed numeric values', completed: false, component: SkewedNumericValues },
     { id: 16, name: 'Corrupted text', completed: false, component: CorruptedText },
-    { id: 17, name: 'Duplicate meaning columns', completed: false, component: null },
-    { id: 18, name: 'Target leakage', completed: false, component: null },
+    { id: 17, name: 'Duplicate meaning columns', completed: false, component: DuplicateMeaningColumns },
+    { id: 18, name: 'Target leakage', completed: false, component: TargetLeakage },
   ];
 
   const currentProblem = problems.find(p => p.id === activeTab);
