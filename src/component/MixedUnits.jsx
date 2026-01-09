@@ -1,4 +1,5 @@
 import React from 'react';
+import ProblemTemplate from './ProblemTemplate';
 
 const MixedUnits = () => {
   const data = {
@@ -225,8 +226,8 @@ print(f"  Average: {cleaned_df['length_cm'].mean():.2f} cm")
 print(f"  Range: {cleaned_df['length_cm'].min():.2f} - {cleaned_df['length_cm'].max():.2f} cm")
 
 print("\\nPrice Statistics (in USD):")
-print(f"  Average: ${cleaned_df['price_usd'].mean():.2f}")
-print(f"  Total: ${cleaned_df['price_usd'].sum():.2f}")
+print(f"  Average: \${cleaned_df['price_usd'].mean():.2f}")
+print(f"  Total: \${cleaned_df['price_usd'].sum():.2f}")
 
 print("\\nTemperature Statistics (in °C):")
 print(f"  Average: {cleaned_df['temperature_c'].mean():.2f}°C")

@@ -1,4 +1,5 @@
 import React from 'react';
+import ProblemTemplate from './ProblemTemplate';
 
 const WrongDataTypes = () => {
   const data = {
@@ -211,9 +212,10 @@ print("BENEFITS OF CORRECT DATA TYPES")
 print("="*70)
 
 print("\\n1. Numeric Operations (now possible):")
-print(f"   Average salary: ${cleaned_df['salary'].mean():,.2f}")
-print(f"   Total payroll: ${cleaned_df['salary'].sum():,.2f}")
-print(f"   Salary range: ${cleaned_df['salary'].min():,} - ${cleaned_df['salary'].max():,}")
+print(f"   Average salary: \${cleaned_df['salary'].mean():,.2f}")
+
+print(f"   Total payroll: \${cleaned_df['salary'].sum():,.2f}")
+print(f"   Salary range: \${cleaned_df['salary'].min():,} - \${cleaned_df['salary'].max():,}")
 
 print("\\n2. Date Operations (now possible):")
 cleaned_df['years_employed'] = (pd.Timestamp.now() - cleaned_df['hire_date']).dt.days / 365.25
@@ -227,7 +229,7 @@ print("\\n4. Memory Usage:")
 print(f"   Before: {df.memory_usage(deep=True).sum() / 1024:.2f} KB")
 print(f"   After:  {cleaned_df.memory_usage(deep=True).sum() / 1024:.2f} KB")
 print(f"   Savings: {(1 - cleaned_df.memory_usage(deep=True).sum() / df.memory_usage(deep=True).sum()) * 100:.1f}%")`,
-    explanation: `**Why Wrong Data Types are Problematic?**
+explanation: `**Why Wrong Data Types are Problematic?**
 
 1. **Operations Fail**: Can't do math on string "75000"
 2. **Sorting Issues**: "100" < "20" when sorted as strings
@@ -239,6 +241,7 @@ print(f"   Savings: {(1 - cleaned_df.memory_usage(deep=True).sum() / df.memory_u
 **Common Wrong Type Scenarios:**
 
 **1. Numeric as Object/String:**
+
 \`\`\`python
 '75000' instead of 75000
 '4.5' instead of 4.5

@@ -16,6 +16,8 @@ import SkewedNumericValues from './component/SkewedNumericValues';
 import CorruptedText from './component/CorruptedText'; 
 import DuplicateMeaningColumns from './component/DuplicateMeaningColumns';
 import TargetLeakage from './component/TargetLeakage';
+import WrongDataTypes from './component/WrongDataTypes';
+import MixedUnits from './component/MixedUnits';
 
 // ============= Main App Component =============
 
@@ -32,10 +34,10 @@ const App = () => {
     { id: 7, name: 'Missing "?"', completed: false, component: MissingQuestionMark },
     { id: 8, name: 'Outliers', completed: false, component: Outliers },
     { id: 9, name: 'Inconsistent categories', completed: false, component: InconsistentCategories },
-    { id: 10, name: 'Wrong data types', completed: false, component: null },
+    { id: 10, name: 'Wrong data types', completed: false, component: WrongDataTypes },
     { id: 11, name: 'Leading / trailing spaces', completed: false, component: LeadingTrailingSpaces },
     { id: 12, name: 'Impossible values', completed: false, component: ImpossibleValues },
-    { id: 13, name: 'Mixed units', completed: false, component: null },
+    { id: 13, name: 'Mixed units', completed: false, component: MixedUnits },
     { id: 14, name: 'Rare categories', completed: false, component: RareCategories },
     { id: 15, name: 'Skewed numeric values', completed: false, component: SkewedNumericValues },
     { id: 16, name: 'Corrupted text', completed: false, component: CorruptedText },
